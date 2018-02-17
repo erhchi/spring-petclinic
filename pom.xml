@@ -152,7 +152,8 @@
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties
         file is present at the classpath -->
-      <!--<plugin>
+		
+      <plugin>
         <groupId>pl.project13.maven</groupId>
         <artifactId>git-commit-id-plugin</artifactId>
         <executions>
@@ -170,7 +171,7 @@
           </generateGitPropertiesFilename>
           <failOnNoGitDirectory>false</failOnNoGitDirectory>
         </configuration>
-      </plugin>-->
+      </plugin>
 
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
@@ -199,7 +200,9 @@
           </dependency>
         </dependencies>
       </plugin>
-	  <plugin>
+	  
+	  
+	  <!--<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
 		<artifactId>maven-dependency-plugin</artifactId>
 		<version>2.4</version>
@@ -210,7 +213,9 @@
 				<goals><goal>copy-dependencies</goal></goals>
 			</execution>
 			</executions>
-		</plugin>
+		</plugin>-->
+		
+		
     </plugins>
   </build>
   <reporting>
